@@ -25,22 +25,28 @@ The implementations, and instructions of how to run them, can be found in their 
 ### Installation consiiderations
 
 1. Remember that you have to manually clone and install the following libraries: `cltl-knowledgeextraction`
-   , `cltl-knowledgelinking`, `cltl-knowledrepresentation`, `cltl-combot`
+   , `cltl-knowledgelinking`, `cltl-knowledrepresentation`, `cltl-combot`, 
+   The library `cltil-evaluating-conversations-as-ekg` is for graph evaluation.
 2. Download the classifier
    from [here](https://drive.google.com/u/0/uc?id=1-33rHc9O2fM-PPaXu8I_oK5xnFwuMlN7&export=download&confirm=9iBg) and
    save it in the `midas-da-roberta` folder.
 
 ## Evaluation
 
-TBD
-
+### Graph to metric
+To evaluate the graph, we should generate the metrics to quatify different criteria of the graphs.
+Follow the steps as follow to generate the criteria metrics.
+1. change each scenario rdf files to correct directories for running the evaluation. 
+2. iterate through the dialogue rdf files via graph evaluator from the library to generate the metrics
+To implement this, run the codes from `graph2metric.ipynb` with the correct file path to the main scenarios folder.
+ 
 ## Authors
 
 Supervisor: Selene Baez Santamaria
 
 - Student 1: Bas Diender
-- Student 2:
-- Student 3:
+- Student 2: 
+- Student 3: Alice X.S. Ye
 - Student 4:
 - Student 5:
 
